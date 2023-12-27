@@ -3,7 +3,7 @@ function classify_RSMPCA(dataset,iRep,iEta2)
 % 2022-6-26 00:34:45
 
 % parameters
-lg_sEta2=-2:0.1:6;  % lg(eta_2)
+lg_sEta2=-2:0.2:6;  % lg(eta_2)
 sEta2=10.^lg_sEta2;  % eta_2
 cEta2=sEta2(iEta2);
 

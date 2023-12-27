@@ -3,7 +3,7 @@ function reco_RSPCA(cDataset,iEta1)
 % 2022-6-26 00:34:45
 
 % parameters
-lg_sEta1=-3:0.2:3;  % lg(eta_1)
+lg_sEta1=-5:0.2:3;  % lg(eta_1)
 sEta1=10.^lg_sEta1;  % eta_1
 cEta1=sEta1(iEta1);
 
