@@ -5,6 +5,10 @@ clear,clc,close all;
 mkdir('result');
 cDataset='ORL';
 
+%% preprocessing
+Laplacian_matrix; % calculate the Laplacian matrix for each dataset
+add_noise; % add random noises for reconstruction
+
 %% reconstruction
 % PCA
 reco_PCA(cDataset);

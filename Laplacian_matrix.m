@@ -12,7 +12,7 @@ for iDataset=1:nDataset
 
     [h,w,~]=size(x);
     d=h*w;
-    [I,J]=ind2sub([h,w],[1:d]');
+    [I,J]=ind2sub([h,w],(1:d)');
     dst=pdist([I,J]);
     dst=squareform(dst); % distance
     A=sparse(d,d);
