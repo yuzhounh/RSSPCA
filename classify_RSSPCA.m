@@ -13,7 +13,7 @@ cEta1=sEta1(iEta1);
 cEta2=sEta2(iEta2);
 
 % load face dataset
-load(sprintf('../data/%s.mat',dataset));
+load(sprintf('data/%s.mat',dataset));
 [image_height,image_width,n_image]=size(x);
 dim=image_height*image_width;
 x=reshape(x,[dim,n_image]); % 2D to 1D
