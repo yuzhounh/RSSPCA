@@ -9,7 +9,7 @@ Experiments were conducted on six benchmark face databases including the AR, FEI
 
 Five competing algorithms including PCA, PCA-L1, RSPCA, and RSMPCA were compared with the proposed RSSPCA in terms of face reconstruction and recognition. 
 
-For parallel computing, please refer to: https://github.com/yuzhounh/RSSPCA_2.  
+For a parallel computing version of this code, please refer to: https://github.com/yuzhounh/RSSPCA_2.  
 
 # Usage
 Run `main.m` to play this demo. 
