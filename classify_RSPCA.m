@@ -1,4 +1,4 @@
-function classify_RSPCA(dataset,iRep,iEta1)
+function classify_RSPCA(cDataset,iRep,iEta1)
 % Calculate the classification accuracy of RSPCA. 
 % 2022-6-26 00:34:45
 
@@ -8,13 +8,13 @@ sEta1=10.^lg_sEta1;  % eta_1
 cEta1=sEta1(iEta1);
 
 % load face dataset
-load(sprintf('data/%s.mat',dataset));
+load(sprintf('data/%s.mat',cDataset));
 [image_height,image_width,n_image]=size(x);
 dim=image_height*image_width;
 x=reshape(x,[dim,n_image]); % 2D to 1D
 
 % Laplacian matrix
-load(sprintf('data/%s_Laplacian.mat',dataset),'L');
+load(sprintf('data/%s_Laplacian.mat',cDataset),'L');
 
 % randomly choose a subset for trainning
 % rng(iRep);
@@ -64,4 +64,4 @@ for iPV=1:nPV
 end
 
 % save the classification accuracies
-save(sprintf('result/classify_RSPCA_%s_iRep_%d_iEta1_%d.mat',dataset,iRep,iEta1),'accuracy','iter');
+save(sprintf('result/classify_RSPCA_%s_iRep_%d_iEta1_%d.mat',cDataset,iRep,iEta1),'accuracy','iter');

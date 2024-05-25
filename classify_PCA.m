@@ -1,9 +1,9 @@
-function classify_PCA(dataset,iRep)
+function classify_PCA(cDataset,iRep)
 % Calculate the classification accuracy of PCA. 
 % 2022-6-26 00:34:45
 
 % load face dataset
-load(sprintf('data/%s.mat',dataset));
+load(sprintf('data/%s.mat',cDataset));
 [image_height,image_width,n_image]=size(x);
 dim=image_height*image_width;
 x=reshape(x,[dim,n_image]); % 2D to 1D
@@ -56,4 +56,4 @@ for iPV=1:nPV
 end
 
 % save the classification accuracies
-save(sprintf('result/classify_PCA_%s_iRep_%d.mat',dataset,iRep),'accuracy');
+save(sprintf('result/classify_PCA_%s_iRep_%d.mat',cDataset,iRep),'accuracy');
