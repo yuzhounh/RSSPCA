@@ -1,20 +1,77 @@
-# Robust Sparse Smooth Principal Component Analysis for Face Reconstruction and Recognition
-Copyright (C) 2023 Jing Wang
+# Robust Sparse Smooth Principal Component Analysis (RSSPCA)
 
-RSSPCA finds the first projection vector by solving the following optimization problem:
-$$\mathop{\max}_{w}||X^Tw||_1,  s.t. ||w||_2^2=1,  ||w||_1<=c_1,  w^TLw<=c_2,$$
-where $c_1$ and $c_2$ are positive constants, $L$ is a Laplacian matrix representing the two-dimensional spatial structure information of images.
+[![License](https://img.shields.io/badge/License-BSD-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-Experiments were conducted on six benchmark face databases including the AR, FEI, FERET, GT, ORL, and Yale face databases. More benchmark face databases are refered to: https://github.com/yuzhounh/Face-databases.  
+This repository contains the implementation of Robust Sparse Smooth Principal Component Analysis (RSSPCA) for face reconstruction and recognition tasks.
 
-Five competing algorithms including PCA, PCA-L1, RSPCA, and RSMPCA were compared with the proposed RSSPCA in terms of face reconstruction and recognition. 
+## Overview
 
-For a parallel computing version of this code, please refer to: https://github.com/yuzhounh/RSSPCA_2.  
+RSSPCA is a novel dimensionality reduction method that combines robustness, sparsity and smoothness properties. The algorithm finds the first projection vector by solving the following optimization problem:
 
-# Usage
-Run `main.m` to play this demo. 
+$$\mathop{\max}_{w}||X^Tw||_1,  s.t. ||w||_2^2=1,  ||w||_1<=c_1,  w^TLw<=c_2$$
 
-# Contact information
-Jing Wang  
-wangjing@xynu.edu.cn  
-2024-1-29 12:31:24
+where:
+- $c_1$ and $c_2$ are positive constants
+- $L$ is a Laplacian matrix representing the two-dimensional spatial structure information of images
+
+## Features
+
+- Robust to outliers and noise in face images
+- Sparse projection vectors for efficient feature extraction
+- Incorporates spatial smoothness constraints
+- Suitable for both face reconstruction and recognition tasks
+
+## Experimental Validation
+
+The algorithm was extensively evaluated on six benchmark face databases:
+- AR
+- FEI  
+- FERET
+- GT
+- ORL
+- Yale
+
+More benchmark face databases can be found [here](https://github.com/yuzhounh/Face-databases).
+
+### Comparison Methods
+RSSPCA was compared with several state-of-the-art algorithms:
+- PCA (Principal Component Analysis)
+- PCA-L1 
+- RSPCA
+- RSMPCA
+
+## Installation and Usage
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yuzhounh/RSSPCA.git
+```
+
+2. Run the demo script in MATLAB:
+```matlab
+main.m
+```
+
+## Parallel Implementation
+
+For large-scale applications, a parallel computing version is available [here](https://github.com/yuzhounh/RSSPCA_2).
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+```
+Paper citation will be added
+```
+
+## Contact
+
+**Jing Wang**
+- Email: wangjing@xynu.edu.cn
+
+## License
+
+Copyright (C) 2023 Jing Wang. This code is released under the BSD license.
+
+## Updates
+
+Last updated: January 29, 2024
