@@ -56,13 +56,6 @@ main.m
 
 For large-scale applications, a parallel computing version is available [here](https://github.com/yuzhounh/RSSPCA_2).
 
-## Citation
-
-If you use this code in your research, please cite our paper:
-```
-Paper citation will be added
-```
-
 ## Contact
 
 **Jing Wang**
