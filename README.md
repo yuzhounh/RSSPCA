@@ -8,7 +8,7 @@ This repository contains the implementation of Robust Sparse Smooth Principal Co
 
 RSSPCA is a novel dimensionality reduction method that combines robustness, sparsity and smoothness properties. The algorithm finds the first projection vector by solving the following optimization problem:
 
-$$\mathop{\max}_{w}\|X^Tw\|_1,  s.t. \|w\|_2^2=1,  \|w\|_1 \leq c_1,  w^TLw \leq c_2$$
+$$\mathop{\max}_{w} \lVert X^Tw \rVert_1,  s.t. \lVert w \rVert_2^2=1, \lVert w \rVert_1<=c_1, w^TLw<=c_2$$
 
 where:
 - $c_1$ and $c_2$ are positive constants
