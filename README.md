@@ -4,7 +4,7 @@
 
 RSSPCA is a novel dimensionality reduction method combining robustness, sparsity and smoothness properties for face reconstruction and recognition tasks. The algorithm solves the following optimization problem:
 
-$$\mathop{\max}_{w}||X^Tw||_1,  s.t. ||w||_2^2=1,  ||w||_1<=c_1,  w^TLw<=c_2$$
+$$\mathop{\max}_{w}\lVert X^Tw\rVert_1,  s.t. \lVert w\rVert_2^2=1,  \lVert w\rVert_1<=c_1, w^TLw<=c_2$$
 
 where $c_1$ and $c_2$ are positive constants, and $L$ is a Laplacian matrix representing the two-dimensional spatial structure information of images.
 
