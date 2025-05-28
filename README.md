@@ -10,7 +10,7 @@ where $c_1$ and $c_2$ are positive constants, and $L$ is a Laplacian matrix repr
 
 The algorithm combines robustness (for outliers/noise resistance), sparsity (for feature selection), and smoothness (for spatial relationship preservation). It has been validated on six benchmark face databases (AR, FEI, FERET, GT, ORL, Yale) against methods including PCA, PCA-L1, RSPCA, and RSMPCA.
 
-To run the demo, execute `main.m` in MATLAB. For large-scale applications, a parallel computing version is available at [RSSPCA_2](https://github.com/yuzhounh/RSSPCA_2). Additional benchmark face databases can be found [here](https://github.com/yuzhounh/Face-databases).
+To run the demo, execute `main.m` in MATLAB. For large-scale applications, a parallel computing version is available at [RSSPCA_parallel](https://github.com/yuzhounh/RSSPCA_parallel). Additional benchmark face databases can be found [here](https://github.com/yuzhounh/Face-databases).
 
 
 ### ORL Face Database
