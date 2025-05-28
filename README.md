@@ -13,7 +13,7 @@ The algorithm combines robustness (for outliers/noise resistance), sparsity (for
 To run the demo, execute `main.m` in MATLAB. For large-scale applications, a parallel computing version is available at [RSSPCA_parallel](https://github.com/yuzhounh/RSSPCA_parallel). Additional benchmark face databases can be found [here](https://github.com/yuzhounh/Face-databases).
 
 
-### ORL Face Database
+### Face Samples
 
 The ORL face database contains 400 face images from 40 subjects, with 10 images per subject. The images were captured with different facial expressions, rotations, and slight scale variations. The original image size is 112 by 92. To reduce computational time, we further resized the images to 56 by 46. The images of two subjects in this database are shown in Fig 1.
 
