@@ -1,6 +1,11 @@
 # Robust Sparse Smooth Principal Component Analysis (RSSPCA)
 
 [![License](https://img.shields.io/badge/License-BSD-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![Paper](https://img.shields.io/badge/Paper-PLOS%20ONE-blue)](https://doi.org/10.1371/journal.pone.0323281)
+
+> **📄 This repository contains the code for the following paper:**
+>
+> Wang, J., Xie, X., Zhang, L., Li, J., Cai, H., & Feng, Y. (2025). Robust sparse smooth principal component analysis for face reconstruction and recognition. *PLOS ONE*, 20(5), e0323281.
 
 RSSPCA is a novel dimensionality reduction method combining robustness, sparsity and smoothness properties for face reconstruction and recognition tasks. The algorithm solves the following optimization problem:
 
@@ -79,8 +84,9 @@ The supplementary materials containing face examples from each dataset can be fo
 
 ### Citation
 
-If you use this code, please cite our paper:
-```
+If you find this project useful for your research, please consider citing our paper:
+
+```bibtex
 @article{wang2025robust,
 author = {Jing Wang and Xiao Xie and Li Zhang and Jian Li and Hao Cai and Yan Feng},
 title = {Robust sparse smooth principal component analysis for face reconstruction and recognition},
